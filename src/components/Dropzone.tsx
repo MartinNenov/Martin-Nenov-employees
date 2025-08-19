@@ -1,9 +1,8 @@
-import React, { useCallback } from 'react';
+import { useCallback } from 'react';
 import { useDropzone, type Accept } from 'react-dropzone';
 import Papa from 'papaparse';
 import "../styles/dropzone.css";
 import { type CsvData } from '../interfaces/CsvData';
-
 
 interface DropzoneProps {
     onDataLoaded: (data: CsvData[]) => void;

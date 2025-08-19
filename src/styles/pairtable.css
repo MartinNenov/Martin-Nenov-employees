@@ -53,6 +53,10 @@
     align-items: flex-start;
 }
 
+.project-breakdown {
+    padding: 10px;
+}
+
 .inner-table-container {
     width: 100%;
     height: 100%;

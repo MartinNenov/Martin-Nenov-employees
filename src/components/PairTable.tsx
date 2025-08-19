@@ -65,7 +65,7 @@ function PairTable({ result }: PairResultsDisplayProps) {
       <div className="outer-row header">
         <div className="outer-cell cell-pair">Employee Pair</div>
         <div className="outer-cell cell-days">Total Days</div>
-        <div className="outer-cell cell-projects">Projects Breakdown</div>
+        <div className="outer-cell cell-projects project-breakdown">Projects Breakdown</div>
       </div>
 
       <List
