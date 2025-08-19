@@ -1,0 +1,16 @@
+.dropzone-container {
+    padding: 70px 0px 70px 0px;
+    width: 600px;
+    border: 2px dashed var(--color-border);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.dropzone-container:hover {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.drop-reject {
+    color: #ff4136;
+}
