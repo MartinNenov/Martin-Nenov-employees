@@ -1,10 +1,10 @@
-import type { PairOverlap } from "./PairOverlap";
+import type { PairOverlap, ProjectDays } from "./PairOverlap";
 
 export interface PairResult {
     topPair: {
         pair: [number, number];
         days: number;
-        projects: { projectId: number, days: number}[];
+        projects: ProjectDays[];
     },
     sorted: PairOverlap[]
 }

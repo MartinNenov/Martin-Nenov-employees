@@ -1,5 +1,7 @@
 .dropzone-container {
     padding: 70px 0px 70px 0px;
+    margin-right: auto;
+    margin-left: auto;
     width: 600px;
     border: 2px dashed var(--color-border);
     border-radius: var(--border-radius);

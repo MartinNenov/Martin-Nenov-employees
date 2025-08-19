@@ -20,7 +20,7 @@ main, body {
   background-color: var(--color-background);
   color: var(--color-text);
 
-  font-family: var(--font-family-sans); /* Use the variable */
+  font-family: var(--font-family-sans);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
 }

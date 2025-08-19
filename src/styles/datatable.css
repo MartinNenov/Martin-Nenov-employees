@@ -3,7 +3,7 @@
     max-width: 800px;
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
-    overflow: hidden; /* Important for border-radius */
+    overflow: hidden;
 }
 .data-row {
     display: flex;
@@ -20,7 +20,7 @@
 }
 .row-cell {
     padding: 8px 12px;
-    flex: 1; /* Each cell takes equal width */
+    flex: 1; 
     text-align: left;
     white-space: nowrap;
     overflow: hidden;

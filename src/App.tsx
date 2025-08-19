@@ -1,18 +1,21 @@
 import { useState } from 'react'
 import Dropzone from './components/Dropzone';
 import DataTable from './components/DataTable';
+import PairTable from './components/PairTable';
 import './App.css'
 import { type CsvData } from './interfaces/CsvData';
 import { findLongestWorkingPair } from './services/employeeAnalyzer';
+import type { PairResult } from './interfaces/PairResult';
 
 function App() {
 
   const [csvData, setCsvData] = useState<CsvData[]>([]);
+  const [analysisResult, setAnalysisResult] = useState<PairResult | null>(null);
 
   const handleDataLoaded = (data: CsvData[]) => {
     const result = findLongestWorkingPair(data);
-    console.log(result)
     setCsvData(data);
+    setAnalysisResult(result);
   };
 
   return (
@@ -23,6 +26,7 @@ function App() {
       </header>
       <main>
         <Dropzone onDataLoaded={handleDataLoaded} />
+        {analysisResult && <PairTable result={analysisResult} />}
         <DataTable data={csvData} />
       </main>
     </div>

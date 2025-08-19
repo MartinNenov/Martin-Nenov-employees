@@ -61,7 +61,7 @@ function Dropzone({ onDataLoaded }: DropzoneProps) {
             });
         };
 
-        reader.readAsText(file); // Read the file as text for Papa Parse
+        reader.readAsText(file);
     }, [onDataLoaded])
 
     const accept: Accept = {
