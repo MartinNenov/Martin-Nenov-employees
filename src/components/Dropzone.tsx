@@ -44,6 +44,8 @@ function Dropzone({ onDataLoaded }: DropzoneProps) {
                             // @ts-ignore
                             obj[header] = row[index] || null;
                         });
+                        obj.EmpID = +obj.EmpID;
+                        obj.ProjectID = +obj.ProjectID;
                         obj.DateFrom = new Date(obj.DateFrom);
                         obj.DateTo = (obj.DateTo && obj.DateTo !== "NULL") ? new Date(obj.DateTo) : new Date();
                         return obj;

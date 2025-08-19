@@ -3,12 +3,15 @@ import Dropzone from './components/Dropzone';
 import DataTable from './components/DataTable';
 import './App.css'
 import { type CsvData } from './interfaces/CsvData';
+import { findLongestWorkingPair } from './services/employeeAnalyzer';
 
 function App() {
 
   const [csvData, setCsvData] = useState<CsvData[]>([]);
 
   const handleDataLoaded = (data: CsvData[]) => {
+    const result = findLongestWorkingPair(data);
+    console.log(result)
     setCsvData(data);
   };
 
